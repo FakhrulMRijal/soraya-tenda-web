@@ -1,0 +1,347 @@
+*{
+    scroll-behavior: smooth;
+
+}
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+
+/* .nav ul {
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-top: 15px;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+    font-family: Helvetica;
+    transition: 0.4s;
+    margin-right: 15px;
+}
+
+.nav a:hover{
+  background-color: white;
+  color: black;
+} */
+
+
+h1{
+    margin: 100px;
+    text-align: center;
+    padding: 0em;
+}
+
+.container {
+    width: 100%;
+    max-width: 65em;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    margin-top: 55px;
+}
+
+.container-navbar {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+
+.nav{
+  margin-right: 150px;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+
+.split > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 15em;
+  margin-right: 50px;
+}
+  
+
+.spacing > * + * {
+    margin-top: var(--spacer, 2rem);
+}
+
+.section-title {
+    text-align: center;
+    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+    line-height: 1;
+    color: #17353d;
+    margin-bottom: 5rem;
+  }  
+
+.hero {
+  
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  background: url(./images/logos.png), linear-gradient(#F6F0EA ,#F1DFD1);
+  height: 50%; 
+  min-height: 1000px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+
+.center-about {
+    text-align: center;
+}
+
+.center-about-sentris {
+  text-align: center;
+  margin-right: 100px;
+}
+
+.center-name-product{
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 25px;
+}
+
+.card {
+  position: relative;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+footer{
+  bottom: 0px;
+  width: 100%;
+  height: 400px;
+  padding-top: 2px ;
+  color: white;
+  background: linear-gradient(to bottom, rgb(120, 16, 151) 0%, rgb(124, 32, 211) 100%);
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+.container-footer{
+  margin-right: 950px;
+  /* margin-top: px; */
+  
+}
+
+.container-footer li {
+  margin-left: 35px;
+  margin-bottom: 3px;
+}
+
+footer li a{
+  color: white;
+}
+
+.footer-bottom {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(180, 62, 196);
+  color: white;
+  text-align: center;
+}
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/* .container .card .content-product:hover{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition: 0.3s;
+} */
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--clr-text, #fff);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: .5em 1.25em;
+    background: var(--clr-accent, blue);
+    border-radius: .25em;
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out, opacity 250ms linear;
+    transition: transform 250ms ease-in-out, opacity 250ms linear, -webkit-transform 250ms ease-in-out;
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: .9;
+  }
+  
+
+
+
+  /* .featured {
+    background: #eee;
+  } */
+  
+  
+
+  
+  
+  
+  
+  
+  /* .featured__item::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    padding: 75% 75% 0 0;
+    border-radius: 50%;
+    background: #2193b0;
+    z-index: -1;
+  } */
+
+  
+  
+  
+
+

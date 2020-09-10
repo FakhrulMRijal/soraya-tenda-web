@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce web design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!-- <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>  
+    </div> -->    
+    <header class="hero">
+        <!-- <div class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> -->
+    </header>
+    <div id="about">
+        <section data-aos="fade-left">
+        <div class="container">
+            <h3 class="section-title">About Us</h3>
+            <hr>
+            <p class="center-about">
+                Dimulai tahun 2005, Soraya Tenda adalah perusahaan yang bergerak di bidang rental atau penyewaan tenda.
+                Namun kita tentunya tidak hanya menyewakan tenda saja, tetapi kita menyediakan kebutuhan pernikahan juga, paket pesta,
+                pertemuan. Dan kami menawarkan bebrapa tenda seperti Tenda Serut Sentris, Serut, Sentris dan dekorasi. Disamping itu kita
+                juga mempunyai peralatan lain untuk acara, seperti AC, kursi, Blower dan lainnya. Kami telah menekuni bidang ini selama 15 tahun
+                dan akan selalu berusaha menjadi yang terbaik agar mendapatkan kepuasan pelanggan.
+            </p>
+        </div>
+       </section>
+    </div>
+
+    <div id="product">
+        <section>
+            <h4 class="section-title" data-aos="fade-right">Products</h4>
+            <div class="container" data-aos="fade-right">
+                <hr>
+                <p class="center-about" style="margin-bottom: 55px">Ini adalah tenda yang akan kami sewakan. </p>
+                <div class="mySlides1 fade">
+                    <div class="card">
+                        <img src="./images/SerutSentris.png" style="width:100%">
+                        <h3 class="center-name-product">Tenda Serut Sentris(Outer)</h3>
+                        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                    </div>  
+                </div>
+                <div class="mySlides1 fade">
+                    <div class="card">
+                        <img src="./images/sentris-2.jpg" style="width:100%">
+                        <h3 class="center-name-product">Tenda Serut Sentris(Inner)</h3>
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="container" data-aos="fade-right">
+                <div class="mySlides2 fade">
+                    <div class="card">
+                        <img src="./images/serut-1.jpg" style="width:100%">
+                        <h3 class="center-name-product">Tenda Serut(Outer)</h3>
+                        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                    </div>  
+                </div>
+                <div class="mySlides2 fade">
+                    <div class="card">
+                        <img src="./images/serut-2.jpg" style="width:100%">
+                        <h3 class="center-name-product">Tenda Serut(Inner)</h3>
+                        <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+                        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="container" data-aos="fade-right">
+                <div class="card">
+                    <img src="./images/vip.jpg" style="width:100%">
+                    <h3 class="center-name-product">Tenda VIP Plus</h3>
+                </div>
+            </div>
+
+
+            
+            <div class="container" data-aos="fade-right">
+                <div class="card">
+                    <img src="./images/saten-1.jpg" style="width:100%">
+                    <h3 class="center-name-product">Tenda Saten</h3>
+                        <!-- <arti class="product smartphone-pros spacing"><b class="section-pros">Pros</b> -->
+                    </p>
+                </div>  
+            </div>
+        </section>
+    </div>
+
+    <div id="location">
+        <div class="container" data-aos="fade-bottom">
+            <h3 class="section-title">Location</h3>
+            <div class="card">
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.449655784765!2d106.904405014769!3d-6.204263295508591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5e4013f5f71%3A0x39a21fd2f2018401!2sSoraya%20Tenda!5e0!3m2!1sen!2sid!4v1599173068782!5m2!1sen!2sid"
+                     width="100%"
+                     height="450" 
+                     frameborder="0" 
+                     style="border:0;" 
+                     allowfullscreen="" 
+                     aria-hidden="false" 
+                     tabindex="0">
+                    </iframe></p>
+                    <!-- <h3 class="center-name-product"></h3> -->
+                    <!-- <arti class="product smartphone-pros spacing"><b class="section-pros">Pros</b> -->
+                </p>
+            </div> 
+        </div>
+    </div>
+
+    <div id="contact">
+        <footer data-aos="fade-bottom">
+            <h1>More Info</h1>
+            <li class="fas fa-map-marker-alt"><span>
+                Jalan Pulojati Blok O-B2 no.6
+                RT.9/RW.3
+                Kelurahan Jatinegara
+                Kecamatan Cakung
+                Jakarta Timur
+                DKI Jakarta
+                13930
+                Indonesia
+            </span></li>
+            <br>
+            <div class="container">
+                <li class="fas fa-phone-alt"><span><a href="tel:0821-1407-7000">0821-1407-7000</a></span></li>
+            </div>
+        </footer>
+
+        <div class="footer-bottom">
+            &copy; Soraya Tenda | Made By Fakhrul M R
+        </div>
+    </div>
+    <script>
+        var slideIndex = [1,1,1];
+        var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+        showSlides(1, 0);
+        showSlides(1, 1);
+        showSlides(1, 2);
+
+        function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+        }
+
+        function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) {slideIndex[no] = 1}    
+        if (n < 1) {slideIndex[no] = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex[no]-1].style.display = "block";  
+        }
+    </script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+    offset: 400, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+    });
+</script>
+
+    
+</body>
+</html>
